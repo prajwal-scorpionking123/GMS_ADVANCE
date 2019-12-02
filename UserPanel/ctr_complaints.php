@@ -1,5 +1,5 @@
 <?php
-require("db.php");
+require("../db.php");
 $data0=$_POST['id'];
 $data1=$_POST['name'];
 $data2=$_POST['email'];

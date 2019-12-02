@@ -21,7 +21,8 @@ else
    {
     $_SESSION['user']=$name;
     $_SESSION['email']=$email;
-      header("location:studentpanel.php");
+	$_SESSION['mobile']=$mob;
+      header("location:./UserPanel/studentpanel.php");
    }
    else
    {
