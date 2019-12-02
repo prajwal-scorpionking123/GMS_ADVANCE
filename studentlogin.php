@@ -16,11 +16,12 @@ if($res)
         $_SESSION['user']=$rows[1];
         $_SESSION['pass']=$rows[4];
         $_SESSION['email']=$rows[2];
+		$_SESSION['mobile']=$rows[5];
         $_SESSION['id']=$rows[0];
- 	 	header("location:studentpanel.php");	
+ 	 	header("location:UserPanel/studentpanel.php");	
  }
  else
  {
-     header("location:signin.html");     
+     header("location:login.php");     
  }
 ?>
