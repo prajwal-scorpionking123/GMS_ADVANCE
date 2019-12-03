@@ -59,17 +59,7 @@ include('header.php');
 </table>
 
  </div>
-<br>
-<div class="jumbotron py-2 " style="background-color: black;color:lavenderblush;">
-<p class="m-0 text-center text-white">  &copy;2019 ALL RIGHTS RESERVED.<br>DEVELOPED BY PRAJWAL PATIL. FOLLOW ON  </p>
- <center>
-     <div style="align-content: center;"> 
-     <a href="https://github.com/prajwal-scorpionking123"><i class="fa fa-github" style="padding-right:5px;font-size:50px;color:#3b5999;text-shadow:2px 2px 4px #000000;"></i></a>
-     <a href="https://www.linkedin.com/in/prajwal-patil-609a19146/"><i class="fa fa-linkedin-square" style="padding-right:5px;color:#0077B5;font-size:50px;text-shadow:2px 2px 4px #000000;"></i></a>
-     <!-- <a href="#"><i style="padding-right:5px;font-size:50px;color:#e4405f;text-shadow:2px 2px 4px #000000;" class="fa fa-instagram"></i></a> -->
-    </div>
-</center>
-    </div>
+
 <?php 
 include('footer.php');
 ?>

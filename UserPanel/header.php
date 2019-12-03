@@ -39,7 +39,7 @@ if(!isset($_SESSION['user']))
         <a class="nav-link " href="complaintform.php">Lodge Grievance</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Track</a>
+        <a class="nav-link" href="track.php" >Track Grievance</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" method="POST" action="../logout1.php">

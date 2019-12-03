@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <title>GMS</title>
-
+  
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,8 +23,9 @@
 
   <!-- Custom styles for this template-->
   <link href="AdminPanel/css/sb-admin.css" rel="stylesheet">
-
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 
 <body>
@@ -39,18 +40,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" >
-            <a class="nav-link" href="index.php"><i class="fa fa-home"></i>Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
          
           <li class="nav-item">
-            <a class="nav-link" href="contact.php"><i class="fa fa-phone"></i>Contact</a>
+            <a class="nav-link" href="contact.php">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-book"></i>Guidelines</a>
+            <a class="nav-link" href="#">Guidelines</a>
+          </li>
+          <li class="nav-item ">
+           <a class="nav-link" href="./track.php"> Redressal Flow</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <i class="fa fa-envelope-open"></i> Lodge Grievance
+            Lodge Grievance
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="login.php">Lodge Grievance</a>
@@ -59,12 +63,10 @@
               <a class="dropdown-item" href="adminsignin.php">Admin Login</a>
             </div>
           </li>
-          <li class="nav-item ">
-           <a class="nav-link" href="./RedressalFlow.php"> <i class="fa fa-road"></i>Redressal Flow</a>
-          </li>
+         
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-group"></i> Redressal Commitees
+               Redressal Commitees
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="./AntiRaggingCommitee.php">Anti-Ragging Commitee</a>
