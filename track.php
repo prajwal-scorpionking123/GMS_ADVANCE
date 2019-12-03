@@ -16,7 +16,7 @@
    
 </head>
 <body >
-<nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #1d9e9e;">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #1d9e9e;font-weight:500;">
   <a class="navbar-brand" href="#">Grievance Redressal Portal</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -66,12 +66,13 @@
 </nav>  
 
      <div class="container"> 
-       
+       <br><br><br><br>
+       <h2>Grievance Redressal Portal Mechanism</h2><br><br>
                         <ul class="progressbar">
                             <li class="active"><img src="./first.png"  width="100px" height="100px"><br>Submit Grievance On Portal</li>
-                            <li class="active"><img src="./second.png"  width="100px" height="100px" title="Your Grievance Seen By Admin"><br>Your Grievance Will be<br>Seen By Admin</li>
-                            <li class="active"><img src="./third.png"  width="100px" height="100px" title="Your Grievance Taken By Grievance Handling Commitee"><br>Your Grievance will be Taken <br>By Grievance Handling Commitee</li>
-                            <li class="active"><img src="./fourth.jpg"  width="100px" height="100px" title="Action is Taken On Your Grievance"><br>Action Will Be Taken By <br>Grievance Handling Commitee</li>
+                            <li class="active"><img src="./second.png"  width="100px" height="100px" title="Your Grievance Seen By Admin"><br>Your Grievance Will be Seen By Admin</li>
+                            <li class="active"><img src="./third.png"  width="100px" height="100px" title="Your Grievance Taken By Grievance Handling Commitee"><br>Your Grievance will be Taken By Grievance Handling Commitee</li>
+                            <li class="active"><img src="./fourth.jpg"  width="100px" height="100px" title="Action is Taken On Your Grievance"><br>Action Will Be Taken By Grievance Handling Commitee</li>
                         </ul>
                    
        </div>
