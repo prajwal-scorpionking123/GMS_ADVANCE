@@ -142,6 +142,11 @@ $res=mysqli_query($conn,$get);
           <i class="fas fa-fw fa-table"></i>
           <span>Women Grievance</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="committee.php">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Grievance Committees</span></a>
+      </li>
     </ul>
 
     <div id="content-wrapper">
@@ -288,7 +293,7 @@ $res=mysqli_query($conn,$get);
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin.min.js"></script>
 
-  <!-- Demo scripts for this page-->
+  <!-- Demo scripts for this page -->
   <script src="js/demo/datatables-demo.js"></script>
 
 </body>

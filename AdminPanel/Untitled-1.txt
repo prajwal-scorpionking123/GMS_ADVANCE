@@ -1,0 +1,5 @@
+<i class="fa fa-home"></i>
+<i class="fa fa-phone"></i>
+<i class="fa fa-book"></i>
+<i class="fa fa-road"></i>
+<i class="fa fa-group"></i> <i class="fa fa-envelope-open"></i> 

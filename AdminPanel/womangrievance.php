@@ -141,6 +141,11 @@ $res=mysqli_query($conn,$get);
           <i class="fas fa-fw fa-table"></i>
           <span>Women Grievance</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="committee.php">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Grievance Committees</span></a>
+      </li>
     </ul>
 
     <div id="content-wrapper">

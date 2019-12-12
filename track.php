@@ -50,13 +50,13 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-group"></i> Redressal Commitees
+              <i class="fa fa-group"></i> Redressal Committees
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="./AntiRaggingCommitee.php">Anti-Ragging Commitee</a>
-                <a class="dropdown-item" href="./SCSTGrievanceCommitee.php">SC/ST Grievance Handling Commitee</a>
-                <a class="dropdown-item" href="./StudentGrievanceCommitee.php">Student Grievance Handling Commitee</a>
-                <a class="dropdown-item" href="./WomenGrievanceHandlingCommitee.php">Woman Grievance Handling Commitee </a>
+                <a class="dropdown-item" href="./AntiRaggingCommitee.php">Anti-Ragging Committee</a>
+                <a class="dropdown-item" href="./SCSTGrievanceCommitee.php">SC/ST Grievance Handling Committee</a>
+                <a class="dropdown-item" href="./StudentGrievanceCommitee.php">Student Grievance Handling Committee</a>
+                <a class="dropdown-item" href="./WomenGrievanceHandlingCommitee.php">Woman Grievance Handling Committee </a>
                 <a class="dropdown-item" href="./RTICommitee.php">Right To Information(R.T.I.)</a>
             </div>
           </li>
