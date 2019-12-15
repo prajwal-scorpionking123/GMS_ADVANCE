@@ -9,7 +9,7 @@ if(!isset($_SESSION['user']))
 error_reporting(E_PARSE|E_ERROR);
 if($_GET['st']==2)
 {
- echo '<script>alert("Grievance Submitted Successfully..")</script>';
+ echo '<script>alert("Unsuccessfull..")</script>';
 }
 ?>
 <?php

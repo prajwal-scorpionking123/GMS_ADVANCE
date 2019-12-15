@@ -34,6 +34,7 @@ $res=mysqli_query($conn,$get);
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -178,37 +179,32 @@ $res=mysqli_query($conn,$get);
                               <th>DATE</th>
                               <th>COMPLAINT</th>
                               <th>STATUS</th>
-                              <th>ACTION</th>
+                            
 
                 </tr>
               </thead>
               <tbody>
               <?php
 			 
-                          while($rows=mysqli_fetch_array($res))
-                          {
-                            
-                            echo "<tr>
-                                  <td>$rows[2]</td>
-                                  <td>$rows[3]</td>
-                                  <td>$rows[4]</td>
-                                  
-                                  
-                                  <td>$rows[7]</td>
-                                  <td>
-                                  <form action=viewcomplaintadmin.php method=post>
-                                  <input type=hidden name=sr value=$rows[0]>
-                                  <input type=hidden name=id value=$rows[1]>
-                                  <input type=hidden name=pane value=WO>
-                                    <button data-toggle=modal  data-target=#myModal type=submit style=background:blue;color:white; class=btn btn-primary>View</button>
-                                  
-                                  </form>
-                                  </td>
-                                  <td>$rows[8]</td>
-                                  <td></td>
-                            </tr>";
-                          }
-                          ?>
+       while($rows=mysqli_fetch_array($res))
+       {
+         
+         echo "<tr>
+               <td>$rows[2]</td>
+               <td>$rows[3]</td>
+               <td>$rows[4]</td>
+               
+               
+               <td>$rows[7]</td>
+               <td>
+               
+      <button data-toggle=modal data-target=#myModal id=$rows[0] type=button style=background:blue;border-width:0px;border-radius:5px;color:white; class=viewdata>View</button>
+               </td>
+               <td>$rows[8]</td>
+               
+         </tr>";
+       }
+       ?>
               </tbody>
               <tfoot>
                 <tr>
@@ -218,7 +214,7 @@ $res=mysqli_query($conn,$get);
                               <th>DATE</th>
                               <th>COMPLAINT</th>
                               <th>STATUS</th>
-                              <th>ACTION</th>
+                          
                 </tr>
               </tfoot>
               </table>
@@ -248,7 +244,45 @@ $res=mysqli_query($conn,$get);
 
   </div>
   <!-- /#wrapper -->
-
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="view">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary mark" data-dismiss="modal">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script>
+    $(document).ready(function(){
+        $('.viewdata').click(function(){
+        
+            var sr=$(this).attr('id');
+            $.ajax({
+              url:'select.php',
+              method:'post',
+              data:{sr:sr},
+              success:function(data){
+                   $('#view').html(data);
+              }
+            });  
+        });
+        
+        $(".mark").click(function(){
+            location.reload(true);
+        });
+    });
+    
+    </script>
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>

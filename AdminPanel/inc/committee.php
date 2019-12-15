@@ -13,15 +13,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Document</title>
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"> -->
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 	
 	<!-- Page level plugin CSS-->
-	<link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 	
 	<!-- Custom styles for this template-->
-	<link href="../css/sb-admin.css" rel="stylesheet">
+	<link href="css/sb-admin.css" rel="stylesheet">
 	</head>
 	<body id="page-top">
 	<script type="text/javascript">
@@ -32,8 +32,9 @@
 		{
 			//--->create data table > start
 			var tbl = '';
+			tbl+='<div class="table-responsive">'
 			tbl +='<table class="table table-bordered" id="dataTable">'
-	
+	        
 				//--->create table header > start
 				tbl +='<thead>';
 					tbl +='<tr>';
@@ -79,12 +80,12 @@
 			//--->create data table > end
 	
 			//add new table row
-			tbl +='<div class="text-center">';
-				tbl +='<span class="btn btn-primary btn_new_row">Add New Row</span>';
-			tbl +='<div>';
+			tbl+='<div class="text-center">';
+		    tbl+='<span class="btn btn-primary btn_new_row">Add New Row</span>'
+			tbl+='<div>';
 	
 			//out put table data
-			$(document).find('.tbl_user_data').html(tbl);
+			$(document).find('.card-body').html(tbl);
 	
 			$(document).find('.btn_save').hide();
 			$(document).find('.btn_cancel').hide(); 	
@@ -576,7 +577,7 @@
 		<span>Women Grievance</span></a>
 	</li>
 	<li class="nav-item">
-	  <a class="nav-link" href="committees.php">
+	  <a class="nav-link" href="committee.php">
 		<i class="fas fa-fw fa-table"></i>
 		<span>Grievance Committees</span></a>
 	</li>
@@ -586,35 +587,20 @@
 											<div class="container-fluid">
 
 										<!-- Breadcrumbs-->
-													<ol class="breadcrumb">
-													<li class="breadcrumb-item">
-														<a href="#">Dashboard</a>
-													</li>
-													<li class="breadcrumb-item active">Tables</li>
-													</ol>
+													
 													<div class="card mb-3">
 																<div class="card-header">
 																	<i class="fas fa-table"></i>
 																		Grievance Committee Members
 																	</div>
 																	<div class="card-body">
-																		
-																		<div class="tbl_user_data table-responsive"></div>
-																
 																	</div>
 											
 																</div>
 													</div> 
-											
-												</div>
-	<!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
-          </div>
-        </div>
-      </footer>
+										</div>
+										
+	
 </div>
 								  <!-- end of table body -->
 <!-- Scroll to Top Button-->
@@ -641,21 +627,21 @@
     </div>
   </div>
 	<!-- Bootstrap core JavaScript-->
-	<script src="../vendor/jquery/jquery.min.js"></script>
-	  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="vendor/jquery/jquery.min.js"></script>
+	  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	
 	  <!-- Core plugin JavaScript-->
-	  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+	  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 	
 	  <!-- Page level plugin JavaScript-->
-	  <script src="../vendor/datatables/jquery.dataTables.js"></script>
-	  <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+	  <script src="vendor/datatables/jquery.dataTables.js"></script>
+	  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 	
 	  <!-- Custom scripts for all pages-->
-	  <script src="../js/sb-admin.min.js"></script>
+	  <script src="js/sb-admin.min.js"></script>
 	
 	  <!-- Demo scripts for this page-->
-	  <script src="../js/demo/datatables-demo.js"></script>
+	  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 </html>

@@ -19,10 +19,22 @@
 <?php 
 include('header.php');
 ?>
+<?php
+require('../db.php');
+$sr=$_GET['sr'];
+$sql="select STATUS from complaints where SR='$sr'";
+$st=mysqli_query($conn,$sql);
+$status=mysqli_fetch_array($st);
+$property1="";
+if($status[0]=='SEEN')
+{
+    $property1="active";
+}
+?>
      <div class="container"> 
                         <ul class="progressbar">
-                            <li class=""><p style="font-size: 20px;"><img src="./first.png"  width="100px" height="100px"><br>Grievance Submitted Successfully</p></li>
-                            <li class=""><p style="font-size: 20px;"><img src="./second.png"  width="100px" height="100px" title="Your Grievance Seen By Admin"><br>Your Grievance <br>Seen By Admin</p></li>
+                            <li class="active"><p style="font-size: 20px;"><img src="./first.png"  width="100px" height="100px"><br>Grievance Submitted Successfully</p></li>
+                            <li class="<?php echo $property1; ?>"><p style="font-size: 20px;"><img src="./second.png"  width="100px" height="100px" title="Your Grievance Seen By Admin"><br>Your Grievance <br>Seen By Admin</p></li>
                             <li class=""><p style="font-size: 20px;"><img src="./third.png"  width="100px" height="100px" title="Your Grievance Taken By Grievance Handling Commitee"><br> Grievance Taken By<br> Grievance Handling Commitee </p></li>
                             <li class=""><p style="font-size: 20px;"><img src="./fourth.jpg"  width="100px" height="100px" title="Action is Taken On Your Grievance"><br>Action Is Taken By <br>Grievance Handling Commitee</p></li>
                         </ul>

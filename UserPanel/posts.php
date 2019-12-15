@@ -32,6 +32,7 @@ $res=mysqli_query($conn,$get);
                   <th>TO</th>
                   <th>COMPLAINT</th>
                   <th>STATUS</th>
+                  <th>Track</th>
                 </tr>
               </thead>
               <tbody>
@@ -52,6 +53,9 @@ $res=mysqli_query($conn,$get);
                </form>
                </td>
                <td>$rows[8]</td>
+               <td>
+                <a  href=track.php?sr=$rows[0] style=background:blue;color:white; class=btn btn-primary>Track</a>
+               </td>
          </tr>";
        }
        ?>
@@ -63,6 +67,7 @@ $res=mysqli_query($conn,$get);
                   <th>TO</th>
                   <th>COMPLAINT</th>
                   <th>STATUS</th>
+                  <th>Track</th>
                 </tr>
               </tfoot>
 			  <tbody>
